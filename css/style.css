@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray-color: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray-color);
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 350px;
+    margin: auto auto;
+    margin-top: 150px;
+    border-radius: 15px;
+    background-color: var(--white-color);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card img {
+    height: 300px;
+    width: 320px;
+    border-radius: 15px;
+    margin-top:-25px;
+}
+
+.card .card-title {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--dark-blue);
+}
+
+.card p {
+    padding-top: 15px;
+    color: var(--grayish-blue);
+    font-size: 18px;
+}
+
+.card .attribution {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 300px;
+        padding: 0 5vw;
+    }
+
+    .card img {
+        max-width: 270px;
+        height: 250px;
+    }
+}
+
